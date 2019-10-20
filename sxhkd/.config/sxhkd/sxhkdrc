@@ -13,8 +13,6 @@ super + space
 # misc. programs
 super + c
 	google-chrome-stable
-super + s
-	spotify
 
 # make sxhkd reload its configuration files:
 super + Escape
