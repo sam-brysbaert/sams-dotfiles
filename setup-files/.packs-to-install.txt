@@ -28,3 +28,5 @@ bspwm
 polybar
 sxhkd
 termite
+noto-fonts
+ttf-dejavu
