@@ -1,0 +1,56 @@
+[colors]
+text = #eaeaea
+background = #292929
+focused = #E8E8E8
+
+[bar/mybar]
+modules-right = memory cpu temperature battery pulseaudio date 
+modules-left = bspwm
+
+bottom = true
+height = 25
+separator = |
+module-margin = 1
+
+background = ${colors.background}
+foreground = ${colors.text}
+font-0 = "Roboto Mono:size=11;1"
+
+[module/date]
+type = internal/date
+interval = 1.0
+date = %Y-%m-%d%
+time = %H:%M
+label = %date% %time%
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+[module/cpu]
+type = internal/cpu
+label = CPU %percentage%%
+
+[module/memory]
+type = internal/memory
+label = %gb_used%/%gb_total%
+
+[module/temperature]
+type = internal/temperature
+
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = AC0
+
+[module/bspwm]
+type = internal/bspwm
+
+label-focused = %name%
+label-focused-background = ${colors.focused}
+label-focused-foreground = ${colors.background}
+label-focused-padding = 1
+
+label-occupied = %name%
+label-occupied-padding = 1
+
+label-empty = 
