@@ -21,3 +21,4 @@
 optional:
 - install tlp and enable its service if on a laptop
 - install nvidia drivers
+- if on ssd enable trim
