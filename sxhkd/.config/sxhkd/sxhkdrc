@@ -13,6 +13,8 @@ super + space
 # misc. programs
 super + c
 	google-chrome-stable
+super + p
+	exec passmenu
 
 # make sxhkd reload its configuration files:
 super + Escape
