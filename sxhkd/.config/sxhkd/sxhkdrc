@@ -13,6 +13,8 @@ super + space
 # misc. programs
 super + c
 	exec google-chrome-stable
+super + i
+	exec google-chrome-stable --incognito
 super + p
 	exec passmenu
 
