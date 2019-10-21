@@ -1,3 +1,6 @@
+# load Xresources file for things like cursor size
+xrdb ~/.Xresources
+
 # load sxhkd for keyboard shortcuts
 sxhkd &
 
