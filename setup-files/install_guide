@@ -1,14 +1,21 @@
-1. install arch as you would normally
-	-Don't forget to install base-devel along with base (with pacstrap)
-2. make user "sam" and give him root priveliges
-3. install yay
-4. install openssh package
-5. install yadm-git (not 'yadm')
-6. copy id_rsa over to new computer (you can use scp or just email or whatever I guess)
-7. clone the yadm repo (with yadm, not git!)
-8. cat .packs-to-install | yay -S -
-9. sudo systemctl enable NetworkManager
-10. scp the contents of ~/.gnupg
-11. git clone blah@blah ~/.password-store
-12. maybe install tlp if it's a laptop (and don't forget to enable the service)
-13. maybe install nvidia package
+
+- install arch - don't forget to install (and enable) networkmanager for internet after boot
+- make user
+
+- git clone git@github.com:sam-brysbaert/sams-dotfiles.git ~/.dotfiles
+- git clone git@bitbucket.org:yoymas/pass.git ~/.password-store
+
+- git clone https://aur.archlinux.org/yay.git
+- cd yay
+- makepkg -si
+- remove yay folder you just created
+
+- cat ~/.dotfiles/setup-files/packs-to-install.txt | yay -S --needed -
+
+- download secret files from drive
+- run secret setup file
+
+
+optional:
+- install tlp and enable its service if on a laptop
+- install nvidia drivers

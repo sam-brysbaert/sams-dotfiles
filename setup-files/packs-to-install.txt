@@ -1,4 +1,5 @@
 alsa-utils
+base-devel
 dmenu
 feh
 fish
@@ -30,3 +31,4 @@ sxhkd
 termite
 noto-fonts
 ttf-dejavu
+unzip
