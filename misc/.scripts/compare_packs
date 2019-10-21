@@ -1,6 +1,6 @@
 #!/bin/bash
 
 packs_installed=$(comm -23 <(pacman -Qqett | sort) <(pacman -Qqg base -g base-devel xorg| sort | uniq))
-packs_to_install=$(cat ~/.dotfiles/setup-files/.packs-to-install.txt | sort)
+packs_to_install=$(cat ~/.dotfiles/setup-files/packs-to-install.txt | sort)
 
 diff -y --suppress-common-lines <(echo "$packs_installed") <(echo "$packs_to_install")
