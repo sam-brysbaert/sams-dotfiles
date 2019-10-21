@@ -3,7 +3,6 @@
 - make user and update /etc/sudoers file
 
 - git clone git@github.com:sam-brysbaert/sams-dotfiles.git ~/.dotfiles
-- git clone git@bitbucket.org:yoymas/pass.git ~/.password-store
 
 - git clone https://aur.archlinux.org/yay.git
 - cd yay
@@ -16,6 +15,7 @@
 - download secret files from drive
 - run secret setup file
 
+- git clone git@bitbucket.org:yoymas/pass.git ~/.password-store
 
 optional:
 - install tlp and enable its service if on a laptop
