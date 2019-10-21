@@ -1,6 +1,6 @@
 
 - install arch - don't forget to install (and enable) networkmanager for internet after boot
-- make user
+- make user and update /etc/sudoers file
 
 - git clone git@github.com:sam-brysbaert/sams-dotfiles.git ~/.dotfiles
 - git clone git@bitbucket.org:yoymas/pass.git ~/.password-store
@@ -11,6 +11,7 @@
 - remove yay folder you just created
 
 - cat ~/.dotfiles/setup-files/packs-to-install.txt | yay -S --needed -
+- stow fish, misc, bspwm, etc.
 
 - download secret files from drive
 - run secret setup file
