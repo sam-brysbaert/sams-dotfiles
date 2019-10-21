@@ -4,7 +4,7 @@
 
 # terminal emulator
 super + Return
-	termite
+	exec termite
 
 # program launcher
 super + space
@@ -12,13 +12,22 @@ super + space
 
 # misc. programs
 super + c
-	google-chrome-stable
+	exec google-chrome-stable
 super + p
 	exec passmenu
 
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
+
+#power control
+
+#poweroff
+super + shift + F4
+	sudo systemctl poweroff
+#sleep
+super + F1
+	sudo systemctl suspend
 
 # volume and media keys
 
