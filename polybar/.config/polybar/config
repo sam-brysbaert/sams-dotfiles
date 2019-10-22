@@ -32,7 +32,7 @@ label = CPU %percentage%%
 
 [module/memory]
 type = internal/memory
-label = %gb_used%/%gb_total%
+label = %gb_free% free
 
 [module/temperature]
 type = internal/temperature
