@@ -8,6 +8,6 @@ set fish_user_paths $fish_user_paths ~/.scripts
 abbr s "exec startx" #starts X
 
 # do startx automatically when you login on tty1
-if test (tty) = "/dev/tty1"
-	exec startx
-end
+#if test (tty) = "/dev/tty1"
+#	exec startx
+#end
