@@ -4,7 +4,7 @@ background = #292929
 focused = #E8E8E8
 
 [bar/mybar]
-modules-right = memory cpu temperature battery alsa date 
+modules-right = memory cpu temperature wired-network wireless-network battery alsa date
 modules-left = bspwm
 
 bottom = true
@@ -41,6 +41,16 @@ type = internal/temperature
 type = internal/battery
 battery = BAT0
 adapter = AC0
+
+[module/wireless-network]
+type = internal/network
+interface = wlp4s0
+label-connected = %essid% %signal%%
+
+[module/wired-network]
+type = internal/network
+interface = enp5s0
+label-connected = wired
 
 [module/bspwm]
 type = internal/bspwm
