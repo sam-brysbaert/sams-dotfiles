@@ -4,7 +4,7 @@ background = #292929
 focused = #E8E8E8
 
 [bar/mybar]
-modules-right = memory cpu temperature battery pulseaudio date 
+modules-right = memory cpu temperature battery alsa date 
 modules-left = bspwm
 
 bottom = true
@@ -23,8 +23,8 @@ date = %Y-%m-%d%
 time = %H:%M
 label = %date% %time%
 
-[module/pulseaudio]
-type = internal/pulseaudio
+[module/alsa]
+type = internal/alsa
 
 [module/cpu]
 type = internal/cpu
