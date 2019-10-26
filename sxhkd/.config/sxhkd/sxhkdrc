@@ -61,15 +61,6 @@ XF86MonBrightnessUp
 XF86MonBrightnessDown
 	sudo xbacklight -dec 10
 
-# keyboard backlight
-
-# increase keyboard backlight brightness
-control + F4
-	sudo ~/.scripts/kb-light.py + 1
-# decrease keyboard backlight brightness
-control+F3
-	sudo ~/.scripts/kb-light.py - 1
-
 #
 # bspwm hotkeys
 #

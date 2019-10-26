@@ -10,8 +10,5 @@ numlockx &
 # set volume to a reasonably low number by default on startup
 amixer set Master 20% &
 
-# set keyboard backlight brightness to zero
-sudo ~/.scripts/kb-light.py - 5
-
 # window manager
 exec bspwm
