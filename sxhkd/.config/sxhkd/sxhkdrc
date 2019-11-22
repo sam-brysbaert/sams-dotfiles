@@ -18,6 +18,14 @@ super + i
 super + p
 	exec passmenu
 
+# take a screenshot with scrot and save it to home directory
+# whole screen
+super + s
+	scrot
+# selection - for some reason it only works if you sleep for a bit first
+super + shift + s
+	sleep 0.2 && scrot -s
+
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
