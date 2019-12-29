@@ -59,6 +59,12 @@ control+XF86AudioLowerVolume
 #next
 control+XF86AudioRaiseVolume
 	playerctl next
+#switch to headphones
+super + XF86AudioMute
+	pactl set-sink-port 0 analog-output-headphones; and pactl set-sink-volume 0 20%
+#switch to speakers
+super + shift + XF86AudioMute
+	pactl set-sink-port 0 analog-output-lineout; and pactl set-sink-volume 0 100%
 
 # brightness
 
