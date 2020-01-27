@@ -8,6 +8,7 @@ sxhkd &
 numlockx &
 
 # when system is inactive: turn off screen, then lock and suspend
+# WARNING: syntax has changed in newer versions, when the new version becomes available in the nix stable repos, you'll have to remove the all the "normal"s.
 xidlehook --not-when-fullscreen --not-when-audio --timer normal 600 'xset dpms force off' '' --timer normal 30 'i3lock -nc 1e1766 & systemctl suspend' '' &
 
 # set volume to a reasonably low number by default on startup
