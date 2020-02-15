@@ -12,9 +12,10 @@ super + space
 
 # misc. programs
 super + c
-	exec google-chrome-stable
+	exec brave
 super + i
-	exec google-chrome-stable --incognito
+	exec brave --incognito
+
 super + p
 	exec passmenu
 
