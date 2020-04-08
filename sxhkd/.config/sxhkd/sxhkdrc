@@ -12,9 +12,9 @@ super + space
 
 # misc. programs
 super + c
-	exec firefox
+	exec chromium
 super + i
-	exec firefox --private
+	exec chromium --incognito
 
 super + p
 	exec passmenu
