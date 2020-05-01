@@ -1,7 +1,7 @@
 [colors]
-text = #eaeaea
-background = #292929
-focused = #E8E8E8
+text = #f8f8f2 
+background = #282a36
+focused = #bd93f9
 
 [bar/mybar]
 modules-right = memory cpu temperature wired-network wireless-network battery alsa date

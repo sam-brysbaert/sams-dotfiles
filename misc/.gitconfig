@@ -1,3 +1,5 @@
 [user]
 	email = sam.brysbaert@gmail.com
 	name = sam brysbaert
+[credential]
+	helper = store
