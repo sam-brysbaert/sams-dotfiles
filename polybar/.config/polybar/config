@@ -3,7 +3,25 @@ text = #f8f8f2
 background = #282a36
 focused = #bd93f9
 
-[bar/mybar]
+[bar/bar-left-monitor]
+monitor = DP-0
+modules-right = memory cpu temperature wired-network wireless-network battery alsa date
+modules-left = bspwm
+
+bottom = true
+height = 27
+separator = |
+module-margin = 1
+
+background = ${colors.background}
+foreground = ${colors.text}
+font-0 = Font Awesome 5 Free:size=11
+font-1 = Font Awesome 5 Free Solid:size=11
+font-2 = Font Awesome 5 Brands:size=11
+font-3 = Roboto Mono:size=11
+
+[bar/bar-right-monitor]
+monitor = DVI-I-1
 modules-right = memory cpu temperature wired-network wireless-network battery alsa date
 modules-left = bspwm
 
