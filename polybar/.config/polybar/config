@@ -70,7 +70,7 @@ ramp-capacity-4 = 
 
 [module/wireless-network]
 type = internal/network
-interface = wlp4s0
+interface = wlan0
 label-connected =  %signal%% - %essid% 
 
 [module/wired-network]
