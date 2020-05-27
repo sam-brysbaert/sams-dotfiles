@@ -14,7 +14,7 @@ xidlehook --not-when-fullscreen --not-when-audio --timer 600 'xset dpms force of
 amixer set Master 20% &
 
 # set x to use both displays
-xrandr --output DP-0 --primary --mode 2560x1440 --rotate normal --output DVI-I-1 --mode 2560x1440 --rotate normal --right-of DP-0
+xrandr --output HDMI-0 --mode 1920x1080 --rotate normal --output DVI-I-1 --primary --mode 2560x1440 --rotate normal --left-of HDMI-0
 
 # window manager
 exec bspwm

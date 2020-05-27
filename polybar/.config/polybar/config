@@ -4,7 +4,7 @@ background = #282a36
 focused = #bd93f9
 
 [bar/bar-left-monitor]
-monitor = DP-0
+monitor = HDMI-0
 modules-right = memory cpu temperature wired-network wireless-network battery alsa date
 modules-left = bspwm
 
