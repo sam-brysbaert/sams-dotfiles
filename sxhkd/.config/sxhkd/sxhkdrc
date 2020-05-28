@@ -19,13 +19,16 @@ super + i
 super + p
 	exec passmenu
 
-# take a screenshot with scrot and save it to home directory
-# whole screen
+#
+# screenshots 
+#
+
+# capture entire screen, save to file + copy to clipboard
 super + s
-	scrot
-# selection - for some reason it only works if you sleep for a bit first
+	maim | tee ~/s/(date +"%FT%T").png | xclip -selection clipboard -t image/png
+# same thing, but just a selection of the screen
 super + shift + s
-	sleep 0.2 && scrot -s
+	maim -s | tee ~/s/(date +"%FT%T").png | xclip -selection clipboard -t image/png
 
 # make sxhkd reload its configuration files:
 super + Escape
