@@ -1,23 +1,32 @@
 #! /bin/sh
 
+# monitors
 bspc monitor  DVI-I-1 -d 1 2 3 4 5
 bspc monitor HDMI-0 -d 6 7 8 9 0
+
+# split ratio
+bspc config split_ratio          0.52
+
+# borders and window gaps
+bspc config normal_border_color "#000000"
+bspc config focused_border_color "#eaeaea"
 
 bspc config border_width         2
 bspc config window_gap          0
 
-# Border colors
-bspc config normal_border_color "#000000"
-bspc config focused_border_color "#eaeaea"
-
-
-bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
-
-# launch polybar
+ 
+# polybar
 $HOME/.config/polybar/launch.sh
 
+# this is necessary for some java programs to work properly (such as rider)
+wmname LG3D
+
+# set zathura to be tiling by defualt instead of floating
+bspc rule -a Zathura state=tiled
+
+## redshift
 # Terminate already running redshift instances
 pkill redshift
 
@@ -26,6 +35,3 @@ while pidof redshift >/dev/null; do sleep 1; done
 
 # load redshift and set it to automatically change screen warmth after sunset
 redshift -l 50:4 -t 6500K:4000K &
-
-# this is necessary for some java programs (such as rider)
-wmname LG3D
