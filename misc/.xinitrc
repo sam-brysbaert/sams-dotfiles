@@ -1,6 +1,9 @@
 # load Xresources file for things like cursor size
 xrdb ~/.Xresources
 
+# set keyboard layout to use alt gr as compose key for international characters
+setxkbmap -option compose:ralt
+
 # load sxhkd for keyboard shortcuts
 sxhkd &
 
