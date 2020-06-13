@@ -3,3 +3,5 @@
 	name = sam brysbaert
 [credential]
 	helper = store
+[pull]
+	ff = only
