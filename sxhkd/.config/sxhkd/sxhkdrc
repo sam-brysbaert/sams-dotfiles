@@ -5,6 +5,12 @@
 # terminal emulator
 super + Return
 	exec kitty
+super + z
+	exec st
+
+#scratchpad
+super + o
+	tdrop -ma -w -4 -y "$PANEL_HEIGHT" -s dropdown st
 
 # program launcher
 super + space
@@ -15,9 +21,21 @@ super + c
 	exec chromium
 super + i
 	exec chromium --incognito
-
 super + p
 	exec passmenu
+super + n
+	exec chromium --app=https://www.netflix.com/
+super + w
+	exec /home/sam/.scripts/plex.sh
+super + alt + w
+	exec /home/sam/.scripts/movietime.sh
+super + shift + w
+	exec /home/sam/.scripts/plex-reverse.sh
+super + t
+	exec telegram-desktop
+super + e
+	exec rofimoji
+
 
 #
 # screenshots 
