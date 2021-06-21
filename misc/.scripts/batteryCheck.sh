@@ -1,7 +1,7 @@
 #!/bin/bash
 
-POWERSUPPLY="/sys/class/power_supply/AC/online" # could be different on your system!
-TOO_LOW=20 # how low is too low?
+POWERSUPPLY="/sys/class/power_supply/AC/online" 
+TOO_LOW=20 
 NOT_CHARGING="0"
 BATTERY_LEVEL=$(acpi -b | grep -P -o '[0-9]+(?=%)')
 STATUS=$(cat $POWERSUPPLY)
