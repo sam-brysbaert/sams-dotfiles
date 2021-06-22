@@ -65,10 +65,10 @@ super + F1
 
 # Increase volume
 XF86AudioRaiseVolume
-	amixer set Master 5%+
+	pactl -- set-sink-volume 0 +5%
 # Decrease volume
 XF86AudioLowerVolume
-	amixer set Master 5%-
+	pactl -- set-sink-volume 0 -5%
 # Mute volume
 XF86AudioMute
 	amixer set Master 0

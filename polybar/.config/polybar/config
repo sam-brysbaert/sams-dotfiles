@@ -4,7 +4,7 @@ background = #282a36
 focused = #bd93f9
 
 [bar/mybar]
-modules-right = memory cpu temperature wired-network wireless-network battery alsa date
+modules-right = memory cpu temperature wired-network wireless-network battery pulseaudio date
 modules-left = bspwm
 
 bottom = true
@@ -26,8 +26,8 @@ date = %Y-%m-%d%
 time = %H:%M
 label =  %date%  %time%
 
-[module/alsa]
-type = internal/alsa
+[module/pulseaudio]
+type = internal/pulseaudio
 label-muted =  %percentage%%
 label-volume = %percentage%%
 format-volume = <ramp-volume> <label-volume>
